@@ -45,10 +45,10 @@ function App() {
         if (res.code !== 1) {
           setError(res.msg);
           setData(null);
-        } else if (!res.name){
+        } else if (!res.name) {
           setError("该QQ号不存在");
           setData(null);
-        }else {
+        } else {
           setError("");
           setData({
             name: res.name,
