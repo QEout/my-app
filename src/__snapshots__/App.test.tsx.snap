@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="main"
+  >
+    <div
+      className="title"
+    >
+      QQ号查询
+    </div>
+    <div>
+      <span>
+        QQ：
+      </span>
+      <input
+        className="input"
+        onChange={[Function]}
+        placeholder="请输入QQ号"
+        type="text"
+      />
+    </div>
+    <div
+      className="result"
+    />
+  </div>
+</div>
+`;

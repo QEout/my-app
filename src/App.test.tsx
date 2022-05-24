@@ -15,16 +15,16 @@ test("snapshot", () => {
 });
 
 test("fetch with wrong qq value", async () => {
-	const data = await fetch(`https://api.uomg.com/api/qq.info?qq=123`).then(
+	const data = await fetch(`https://api.uomg.com/api/qq.info?qq=1`).then(
 		(res) => res.json()
 	);
-	expect(data.code).not.toBe(1);
+	expect(data.name).toBe(null);
 });
 
 test("fetch with right qq value", async () => {
 	const data = await fetch(`https://api.uomg.com/api/qq.info?qq=123456`).then(
 		(res) => res.json()
 	);
-	expect(data.code).toBe(1);
+  expect(data.name).not.toBe(null);
 	expect(data.qq).toBe("123456");
 });
