@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-size: 32px;
+  color:#3498db;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  position: relative;
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 40px;
+  letter-spacing: 6px;
+}
+.result {
+  height: 240px;
+}
+.input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: inherit;
+  border-bottom: 2px solid #3498db;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.userCard{
+  display: inline-flex;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  margin:40px;
+  padding:20px;
+  background-color: #F5F5F6;
+}
+.userCard img{
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  margin-right: 20px;
+}
+.userCard .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.qq{
+  color:grey
+}
